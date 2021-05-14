@@ -21,13 +21,13 @@ datasets; A computer scientist who can design and use algorithms to efficiently 
 
 *  **How to create Array**   
 
-(1) **Create from list** 
+  * (1) **Create from list** 
 ```
     np.array([1, 2, 3, 4], dtype='float32')
     np.array([3.14, 4, 2, 3])
 ```
         For ana array, the element should have the same type (like string, int, float and etc)
-(2) **Create ftom built-in method**
+ * (2) **Create ftom built-in method**
 ```
     np.zeros(10, dtype=int)          # Create a length-10 integer array filled with zeros
     np.ones((3, 5), dtype=float)    # Create a 3x5 floating-point array filled with 1s
