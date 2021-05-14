@@ -1,3 +1,4 @@
-# Python Data Science Handbook <h1> tag
+# Python Data Science Handbook <h1> 
+ by **Jake VanderPlas**
 
 
