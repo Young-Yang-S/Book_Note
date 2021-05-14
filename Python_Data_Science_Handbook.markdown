@@ -40,6 +40,9 @@ datasets; A computer scientist who can design and use algorithms to efficiently 
     np.random.randint(0, 10, (3, 3))  # # Create a 3x3 array of random integers in the interval [0, 10)
     np.eye(3)                                     # Create a 3x3 identity matrix  (Diagonal element is 1)
 ```
-   (3) 
+*  Numpy data type and how to express it:
+    *  np.zeros(10, dtype='int16')  # use quote
+    *  np.zeros(10, dtype=np.int16)  # use np.
+
    ![image](https://user-images.githubusercontent.com/76230868/118315780-f0697e80-b4c3-11eb-8010-6cf5ca84b934.png)
 
