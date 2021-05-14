@@ -11,7 +11,7 @@ datasets; A computer scientist who can design and use algorithms to efficiently 
 
 *  Python packages Data scientist must know: **NumPy** for manipulation of homogeneous array-based data, **Pandas** for manipulation of heterogeneous and labeled data, **SciPy** for common scientific computing tasks, **Matplotlib** for publication-quality visualizations, **IPython** for interactive execution and sharing of code, **Scikit-Learn** for machine learning.
 
-## Mdule Two: Numpy Introduction
+## Module Two: Numpy Introduction
 
 *  Image can be regarded as two-dimensional array of numbers representing pixel brightness across the area.
 
@@ -20,6 +20,7 @@ datasets; A computer scientist who can design and use algorithms to efficiently 
 *  How to import Numpy module: Import numpy as np
 
 *  **How to create Array**   
+
 (1) **Create from list** 
 ```
     np.array([1, 2, 3, 4], dtype='float32')
