@@ -18,4 +18,10 @@ datasets; A computer scientist who can design and use algorithms to efficiently 
 *  The first key thing for data scientist is to convert the information (Image, Text, Sound) we are focusing into arrays of data.
 
 *  How to import Numpy module: Import numpy as np
+
+*      function fancyAlert(arg) {
+      if(arg) {
+        $.facebox({div:'#foo'})
+      }
+    }
  
