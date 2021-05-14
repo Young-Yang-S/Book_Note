@@ -19,5 +19,6 @@ datasets; A computer scientist who can design and use algorithms to efficiently 
 
 *  How to import Numpy module: Import numpy as np
 
-*  **How to create Array**   np.array([1, 2, 3, 4], dtype='float32')
+*  **How to create Array**   
+    np.array([1, 2, 3, 4], dtype='float32')
  
