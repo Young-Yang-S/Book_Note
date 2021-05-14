@@ -20,6 +20,10 @@ datasets; A computer scientist who can design and use algorithms to efficiently 
 *  How to import Numpy module: Import numpy as np
 
 *  **How to create Array**   
+(1) **Creat from list** 
 ```
     np.array([1, 2, 3, 4], dtype='float32')
+    np.array([3.14, 4, 2, 3])
 ```
+   For ana array, the element should have the same type (like string, int, float and etc)
+(2)
