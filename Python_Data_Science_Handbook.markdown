@@ -19,7 +19,7 @@ datasets; A computer scientist who can design and use algorithms to efficiently 
 
 *  How to import Numpy module: Import numpy as np
 
-*  **How to create Array**   
+*  How to create Array   
 
   (1) **Create from list** 
 ```
@@ -45,4 +45,24 @@ datasets; A computer scientist who can design and use algorithms to efficiently 
     *  np.zeros(10, dtype=np.int16)  # use np.
 
    ![image](https://user-images.githubusercontent.com/76230868/118315780-f0697e80-b4c3-11eb-8010-6cf5ca84b934.png)
+   
+*   Basic numpy array manipulation
+    **Attributes of Array, Indexing of Array, Slicing of Arrays, Reshaping of Arrays, Joining and Splitting of Arrays**
+ 
+ *   Attributes of Array
+     np.random.seed(0) # set seed for reproducibility
+     x3 = np.random.randint(10, size=(3, 4, 5)) # Create a three-dimensional array
+     
+     *  x3 ndim: 3               # the number of dimensions
+     *  x3 shape: (3, 4, 5)   # the size of each dimension
+     *  x3 size: 60               # the total size of the array
+     *  x3.dtype:                 # data type
+     *  x3.itemsize              # each item size in bytes 
+     *   x3.nbyte                  # total size of array in bytes
+*   Indexing 
+     
+  
+   
+   
+   
 
