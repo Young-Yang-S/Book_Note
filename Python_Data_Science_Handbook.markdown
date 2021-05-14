@@ -30,10 +30,16 @@ datasets; A computer scientist who can design and use algorithms to efficiently 
      
   (2) **Create ftom built-in method**
 ```
-    np.zeros(10, dtype=int)          # Create a length-10 integer array filled with zeros
-    np.ones((3, 5), dtype=float)    # Create a 3x5 floating-point array filled with 1s
-    np.full((3, 5), 3.14)                  # Create a 3x5 array filled with 3.14
-    np.arange(0, 20, 2)                 # Create an array filled with a linear sequence, Starting at 0, ending at 20, stepping by 2
-    np.linspace(0, 1, 5)                 # Create an array of five values evenly spaced between 0 and 1
-    
+    np.zeros(10, dtype=int)              # Create a length-10 integer array filled with zeros
+    np.ones((3, 5), dtype=float)        # Create a 3x5 floating-point array filled with 1s
+    np.full((3, 5), 3.14)                      # Create a 3x5 array filled with 3.14
+    np.arange(0, 20, 2)                     # Create an array filled with a linear sequence, Starting at 0, ending at 20, stepping by 2
+    np.linspace(0, 1, 5)                     # Create an array of five values evenly spaced between 0 and 1
+    np.random.random((3, 3))          # Create a 3x3 array of uniformly distributed random values between 0 and 1
+    np.random.normal(0, 1, (3, 3))   # Create a 3x3 array of normally distributed random values with mean 0 and standard deviation 1
+    np.random.randint(0, 10, (3, 3))  # # Create a 3x3 array of random integers in the interval [0, 10)
+    np.eye(3)                                     # Create a 3x3 identity matrix  (Diagonal element is 1)
 ```
+   (3) 
+   ![image](https://user-images.githubusercontent.com/76230868/118315780-f0697e80-b4c3-11eb-8010-6cf5ca84b934.png)
+
