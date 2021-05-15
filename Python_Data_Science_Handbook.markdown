@@ -325,11 +325,11 @@ x2[:2, :2].copy()
     
     The example 2-D array is the 2-D normal distribution points in X in the last star point
     
-    # Fristly, we choose random index of item of 20 from number of X.shape[0] total items
+     **Fristly, we choose random index of item of 20 from number of X.shape[0] total items
     
      indices = np.random.choice(X.shape[0], 20, replace=False)
      
-     # The we use fancy indexing to get the data
+     **The we use fancy indexing to get the data
      
      selection = X[indices]
      
@@ -339,6 +339,21 @@ x2[:2, :2].copy()
      
      ![image](https://user-images.githubusercontent.com/76230868/118346836-5e399880-b50c-11eb-8202-8515ded98c3c.png)
 
+*  Sort function
+   
+   np.sort(x)  or  x.sort()   # sort ascending
+   
+   np.argsort(x)    # sort and get the index
+   
+   We can use fancy indexing method to use result of argsort to get the item sort result
+   
+   np.sort(X, axis=0)   # sort each column of X
+   
+   np.sort(X, axis=1)  # sort each row of X
+   
+   
+   
+   
      
      
       
