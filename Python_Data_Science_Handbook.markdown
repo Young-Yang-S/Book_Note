@@ -257,7 +257,9 @@ x2[:2, :2].copy()
  [51 92 14 71 60 20 82 86 74 74]
  ```
  
- *  Fancy index (Get the subset of array)
+ *  Fancy index (Get the subset of array, modify certain values in array)
+
+     (1)  Subset of array
   
     One good stuff for fancy index is that it can change the dimension of result that we desire
     
@@ -297,8 +299,47 @@ x2[:2, :2].copy()
               
           X[1:, [2, 0, 1]]        # get the third, first, second item after second row
           
+         (2)  Modify values with fancy indexing 
+          
+         x = np.arange(10)
          
+          i = np.array([2, 1, 8, 4])
+          
+          x[i] = 99
+          
+          x[i] -= 10
+             
+      *  Generate two-dimensional normal distribution
+         
+          mean = [0, 0]
+          
+          cov = [[1, 2],
+                    [2, 5]]
+                    
+          X = rand.multivariate_normal(mean, cov, 100)
+     
+**Two dimensional normal distribution**
+![image](https://user-images.githubusercontent.com/76230868/118346674-31d14c80-b50b-11eb-881c-8c0292d1383a.png)
 
+*  How to select certain random number 
+    
+    The example 2-D array is the 2-D normal distribution points in X in the last star point
+    
+    # Fristly, we choose random index of item of 20 from number of X.shape[0] total items
+    
+     indices = np.random.choice(X.shape[0], 20, replace=False)
+     
+     # The we use fancy indexing to get the data
+     
+     selection = X[indices]
+     
+     This is a useful method for splitting training data set and test data set
+     
+     **Twenty random points from 100 points**
+     
+     ![image](https://user-images.githubusercontent.com/76230868/118346836-5e399880-b50c-11eb-8202-8515ded98c3c.png)
+
+     
      
       
     
