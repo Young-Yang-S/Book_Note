@@ -117,7 +117,7 @@ x2[:2, :2].copy()
                      [ 8, 9, 10, 11],
                      [12, 13, 14, 15]])
                      
-        * np.vsplit(grid, [2])                    # split horizontally from index 2                    
+          np.vsplit(grid, [2])                    # split horizontally from index 2                    
            [[0 1 2 3]                   [[ 8 9 10 11]               
             [4 5 6 7]]                   [12 13 14 15]]
             
@@ -134,16 +134,17 @@ x2[:2, :2].copy()
             
          
 *    Array arithmetic 
+
     *  **x = [0 1 2 3]**
      
-    *  x + 5 = [5 6 7 8]
-     * x - 5 = [-5 -4 -3 -2]
-     * x * 2 = [0 2 4 6]
-     * x / 2 = [ 0. 0.5 1. 1.5]
-     * x // 2 = [0 0 1 1]
-     *  x = [ 0 -1 -2 -3]
-     *  x ** 2 = [0 1 4 9]
-     *  x % 2 = [0 1 0 1]
+      x + 5 = [5 6 7 8]
+      x - 5 = [-5 -4 -3 -2]
+      x * 2 = [0 2 4 6]
+      x / 2 = [ 0. 0.5 1. 1.5]
+      x // 2 = [0 0 1 1]
+       x = [ 0 -1 -2 -3]
+       x ** 2 = [0 1 4 9]
+       x % 2 = [0 1 0 1]
   
 ![image](https://user-images.githubusercontent.com/76230868/118343547-b87c2e80-b4f7-11eb-8f93-213f029ca619.png)
 
@@ -151,40 +152,40 @@ x2[:2, :2].copy()
       abs(x)
  
 *    Trigonometric functions
-      np.sin(theta)
-      np.cos(theta)
-      np.tan(theta)
-      np.arcsin(x)
-      np.arccos(x)
-      np.arctan(x)
+      * np.sin(theta)
+      * np.cos(theta)
+      * np.tan(theta)
+      * np.arcsin(x)
+      * np.arccos(x)
+      * np.arctan(x)
       
 *     Exponents and logarithms
-         np.exp(x)             # e^x
-         np.exp2(x)          # 2^x
-         np.power(3, x)    # 3^x
-         np.log(x)
-         np.log2(x)
-         np.log10(x)
+        * np.exp(x)             # e^x
+         * np.exp2(x)          # 2^x
+         * np.power(3, x)    # 3^x
+         * np.log(x)
+        *  np.log2(x)
+         * np.log10(x)
    
 *   The above operations are the common one in numpy, there are a lot of others which can be checked in documentation
 
 *    Aggregation 1
-     np.add.reduce(x)     # calculate the sum of items in array
-     np.multiply.reduce(x)  # calculate the product of items in array, we can apply reduce function after arithmetic operators
-     np.add.accumulate(x)  # accumulate is to show all the intermediate results of computations
-     np.multiply.accumulate(x)
+     * np.add.reduce(x)     # calculate the sum of items in array
+     * np.multiply.reduce(x)  # calculate the product of items in array, we can apply reduce function after arithmetic operators
+     * np.add.accumulate(x)  # accumulate is to show all the intermediate results of computations
+     * np.multiply.accumulate(x)
         
 *    Aggregation 2
 (1)  One dimension:
-      np.sum(L)        # calculate the sum of items in array
-      np.min(big_array), np.max(big_array)        # get the min and max 
+      * np.sum(L)        # calculate the sum of items in array
+      * np.min(big_array), np.max(big_array)        # get the min and max 
       
    Or big_array.min(), big_array.max(), big_array.sum()  use this syntax
 
 (2)  Multidimensional 
-       M.sum()      # sum all
-       M.min(axis=0)  # sum by column
-       M.min(axis=1)   # sum by row 
+       * M.sum()      # sum all
+       * M.min(axis=0)  # sum by column
+       * M.min(axis=1)   # sum by row 
 
 ![image](https://user-images.githubusercontent.com/76230868/118344058-4eb15400-b4fa-11eb-8d2c-80138d131542.png)
 
