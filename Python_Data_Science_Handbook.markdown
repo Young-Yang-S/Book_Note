@@ -69,7 +69,9 @@ datasets; A computer scientist who can design and use algorithms to efficiently 
      * Change the value of item in array
        x2[0,2] = 12 
 
-*    Slicing 
+*    Slicing
+      x[:5]         # first five elements
+       x[5:]        # elements after index 5
 
      
      
