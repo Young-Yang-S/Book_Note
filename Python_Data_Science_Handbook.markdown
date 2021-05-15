@@ -92,6 +92,7 @@ x2[:2, :2].copy()
 ```
 
 * Reshaping of array:
+
 (1)  Change the shape of array:
        np.arange(1, 10).reshape((3, 3))      # change to 3,3 dimensions
  
@@ -107,6 +108,7 @@ x2[:2, :2].copy()
       np.hstack([grid, y])
   
   * Splitting
+  
 (1) Splitting one dimensional array 
        *   x = [1, 2, 3, 99, 99, 3, 2, 1]
        *   x1, x2, x3 = np.split(x, [3, 5])        # split from index 3 and 5       [1 2 3] [99 99] [3 2 1]
@@ -176,6 +178,7 @@ x2[:2, :2].copy()
      * np.multiply.accumulate(x)
         
 *    Aggregation 2
+
 (1)  One dimension:
       * np.sum(L)        # calculate the sum of items in array
       * np.min(big_array), np.max(big_array)        # get the min and max 
