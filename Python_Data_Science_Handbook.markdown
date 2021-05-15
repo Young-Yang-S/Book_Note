@@ -60,6 +60,18 @@ datasets; A computer scientist who can design and use algorithms to efficiently 
      *  x3.itemsize              # each item size in bytes 
      *   x3.nbyte                  # total size of array in bytes
 *   Indexing 
+    *  Exampe Array:  x1 = array([5, 0, 3, 3, 7, 9])
+        x1[4] = 7 
+        x1[-1] =  9
+    *  Exampe Array:   x2 = array([[3, 5, 2, 4], [7, 6, 8, 8],[1, 6, 7, 7]])
+        x2[2, -1] = 7
+        
+     * Change the value of item in array
+       x2[0,2] = 12 
+
+*    Slicing 
+
+     
      
   
    
