@@ -70,11 +70,29 @@ datasets; A computer scientist who can design and use algorithms to efficiently 
        x2[0,2] = 12 
 
 *    Slicing
-      x[:5]         # first five elements
-       x[5:]        # elements after index 5
+(1)  **One dimensional array** 
+      *  x[:5]         # first five elements
+      *  x[5:]        # elements after index 5
+      *  x[4:7]      # element from forth to seventh
+      *  x[1::2]     # starting at index 1,step is 2,  like array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]), return  array([1, 3, 5, 7, 9])
+      *  x[::-1]      # all elements, reversed
+(2)  **Two dimensional array**
+      *   Example: array([[12, 5, 2, 4],
+                                     [ 7, 6, 8, 8],
+                                     [ 1, 6, 7, 7]])
+      *   x2[:2, :3]        # two rows, three columns
+      *   x2[:3, ::2]       # three rows, column step is 2
+      *   x2[::-1, ::-1]    # reverse array
+      *   x2[:, 0]           # get all rows, first column
+     **Tip** for slicing: in numpy, all of these slicing method return the view of array rather than the copy of array which means if you change the returned sub array, then the original array will also be changed
+ 
+*    Get the copy of array: 
+```
+x2[:2, :2].copy()
+```
 
-     
-     
+* Reshaping of array:
+  
   
    
    
