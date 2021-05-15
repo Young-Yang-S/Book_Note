@@ -108,16 +108,16 @@ x2[:2, :2].copy()
   
   * Splitting
 (1) Splitting one dimensional array 
-         x = [1, 2, 3, 99, 99, 3, 2, 1]
-        x1, x2, x3 = np.split(x, [3, 5])        # split from index 3 and 5       [1 2 3] [99 99] [3 2 1]
+       *   x = [1, 2, 3, 99, 99, 3, 2, 1]
+       *   x1, x2, x3 = np.split(x, [3, 5])        # split from index 3 and 5       [1 2 3] [99 99] [3 2 1]
    
  (2)  vsplit and hsplit
-            array([[ 0, 1, 2, 3],
+        *   array([[ 0, 1, 2, 3],
                      [ 4, 5, 6, 7],
                      [ 8, 9, 10, 11],
                      [12, 13, 14, 15]])
                      
-           np.vsplit(grid, [2])                    # split horizontally from index 2                    
+        * np.vsplit(grid, [2])                    # split horizontally from index 2                    
            [[0 1 2 3]                   [[ 8 9 10 11]               
             [4 5 6 7]]                   [12 13 14 15]]
             
@@ -134,16 +134,16 @@ x2[:2, :2].copy()
             
          
 *    Array arithmetic 
-     **x = [0 1 2 3]**
+    *  **x = [0 1 2 3]**
      
-     x + 5 = [5 6 7 8]
-     x - 5 = [-5 -4 -3 -2]
-     x * 2 = [0 2 4 6]
-     x / 2 = [ 0. 0.5 1. 1.5]
-     x // 2 = [0 0 1 1]
-     -x = [ 0 -1 -2 -3]
-      x ** 2 = [0 1 4 9]
-      x % 2 = [0 1 0 1]
+    *  x + 5 = [5 6 7 8]
+     * x - 5 = [-5 -4 -3 -2]
+     * x * 2 = [0 2 4 6]
+     * x / 2 = [ 0. 0.5 1. 1.5]
+     * x // 2 = [0 0 1 1]
+     *  x = [ 0 -1 -2 -3]
+     *  x ** 2 = [0 1 4 9]
+     *  x % 2 = [0 1 0 1]
   
 ![image](https://user-images.githubusercontent.com/76230868/118343547-b87c2e80-b4f7-11eb-8f93-213f029ca619.png)
 
