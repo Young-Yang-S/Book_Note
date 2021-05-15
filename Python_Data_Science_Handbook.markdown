@@ -110,8 +110,9 @@ x2[:2, :2].copy()
   * Splitting
   
 (1) Splitting one dimensional array 
-       *   x = [1, 2, 3, 99, 99, 3, 2, 1]
-       *   x1, x2, x3 = np.split(x, [3, 5])        # split from index 3 and 5       [1 2 3] [99 99] [3 2 1]
+    x = [1, 2, 3, 99, 99, 3, 2, 1]
+       
+   x1, x2, x3 = np.split(x, [3, 5])        # split from index 3 and 5       [1 2 3] [99 99] [3 2 1]
    
  (2)  vsplit and hsplit
         *   array([[ 0, 1, 2, 3],
@@ -182,6 +183,11 @@ x2[:2, :2].copy()
 (1)  One dimension:
       * np.sum(L)        # calculate the sum of items in array
       * np.min(big_array), np.max(big_array)        # get the min and max 
+      * heights.mean()
+      * heights.std()
+      * np.percentile(heights, 25))
+      *  np.median(heights))
+      *  np.percentile(heights, 75))
       
    Or big_array.min(), big_array.max(), big_array.sum()  use this syntax
 
@@ -189,13 +195,25 @@ x2[:2, :2].copy()
        * M.sum()      # sum all
        * M.min(axis=0)  # sum by column
        * M.min(axis=1)   # sum by row 
+       
 
 ![image](https://user-images.githubusercontent.com/76230868/118344058-4eb15400-b4fa-11eb-8d2c-80138d131542.png)
 
 
+*  Broadcasting
+   
+   This is used to solve the problem of addition, substraction, multiplication etc on arrays of **different sizes**
+   
+   a = np.array([0, 1, 2])
+   
+   M = np.ones((3, 3))
+ 
+   M + a =  array([[ 1., 2., 3.],
+                             [ 1., 2., 3.],
+                             [ 1., 2., 3.]])
+        
+   # 
 
-             
-           
 
 
      
