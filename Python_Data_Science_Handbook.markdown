@@ -212,7 +212,97 @@ x2[:2, :2].copy()
                              [ 1., 2., 3.],
                              [ 1., 2., 3.]])
         
-   # 
+  ![image](https://user-images.githubusercontent.com/76230868/118345678-29c1de80-b504-11eb-88a7-0983d1f8ea6c.png)
+
+
+* Boolean operation
+
+   x = np.array([1, 2, 3, 4, 5])
+
+    x == 3
+    
+    The return of it is  array([False, False, True, False, False], dtype=bool)
+    
+    ![image](https://user-images.githubusercontent.com/76230868/118345895-bcaf4880-b505-11eb-878e-f0ea4c491654.png)
+
+*  compound expressions means like this  (2 * x) == (x ** 2)
+
+*  Boolean Function 
+   
+   With boolean array, we can do a lot of stuff,  like set some conditions and return certain element.
+   
+   np.count_nonzero(x < 6)  # how many values less than 6?
+   
+    np.sum(x < 6, axis=1)    # how many values less than 6 in each row?
+    
+    np.any(x > 8)   # are there any values greater than 8?
+    
+    np.all(x < 10)  #  are all values less than 10?
+    
+    np.all(x < 8, axis=1)   # are all values in each row less than 8?
+    
+    x[x < 5]    # return item which is less than 5
+    
+  *  Boolean operator 
+  
+     np.sum((inches > 0.5) & (inches < 1))
+     
+     ![image](https://user-images.githubusercontent.com/76230868/118346104-3267e400-b507-11eb-976d-49d5b3939783.png)
+
+  *  Generate random array
+ ```
+ rand = np.random.RandomState(42)
+ x = rand.randint(100, size=10)
+
+ [51 92 14 71 60 20 82 86 74 74]
+ ```
+ 
+ *  Fancy index (Get the subset of array)
+  
+    One good stuff for fancy index is that it can change the dimension of result that we desire
+    
+    * One dimension
+ 
+     x = [51 92 14 71 60 20 82 86 74 74]
+     
+     ind = [3, 7, 4]
+     
+     x[ind]
+     
+     array([71, 86, 60])
+     
+     ind = np.array([[3, 7],
+                            [4, 5]])
+                           
+     x[ind]
+     
+     array([[71, 86],
+                [60, 20]])
+                
+     * Two dimension 
+
+        For two dimension array, we should use two array to get the value of it
+        
+        X = array([[ 0, 1, 2, 3],
+                     [ 4, 5, 6, 7],
+                     [ 8, 9, 10, 11]])
+         
+         row = np.array([0, 1, 2])
+         col = np.array([2, 1, 3])
+         X[row, col]
+         
+         
+         Or more complex one:
+              X[2, [2, 0, 1]]       # get the third, first, second item in second row
+              
+          X[1:, [2, 0, 1]]        # get the third, first, second item after second row
+          
+         
+
+     
+      
+    
+    
 
 
 
