@@ -352,8 +352,19 @@ x2[:2, :2].copy()
    np.sort(X, axis=1)  # sort each row of X
    
    
+  * Partition Function
+  
+    Patition is used to split elements in array into left and right two parts with the smallest items in the left and largest items in the right.
+    
+     x = np.array([7, 2, 3, 1, 6, 5, 4])
+    np.partition(x, 3)
+    
+    Result: array([2, 1, 3, 4, 6, 5, 7])       # here we can see that the first three items are the smallest ones and then the right part contains the largest rest 4 items, but one key thing is within two parts, the order is arbitrary
+    
+    numpy also has np.argpartition which returns the index
+    
    
-   
+ 
      
      
       
