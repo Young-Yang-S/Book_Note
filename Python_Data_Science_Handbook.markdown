@@ -363,16 +363,61 @@ x2[:2, :2].copy()
     
     numpy also has np.argpartition which returns the index
     
-   
  
+     ## Module Three: Pandas Introduction
      
+   *  Basic pandas data structure: ** Series, dataframe and index
+
+   *  Series: Series in pandas is one-dimensional array of indexed data. 
+
+        **Format**  pd.Series(data, index=index)
+    
+         Example: data = pd.Series([0.25, 0.5, 0.75, 1.0])
+         
+         or with index name data = pd.Series([0.25, 0.5, 0.75, 1.0]  ,  index=['a', 'b', 'c', 'd'])
+          
+        ![image](https://user-images.githubusercontent.com/76230868/118381600-62bc8a80-b5ba-11eb-8e06-4031858fbe5b.png)
+
+         **Value** : data.values      or      data[1:3]
+         
+         **Index**    data.index
+         
+         Series could be regardas something similar to the dictionary and it can be created from a dictionary like this:
+         
+         population = pd.Series(population_dict)
+
+   *   Dataframe: two-dimensional array of indexed data
+   
+   *   Dataframe attributes
+       
+        states.index
+        
+        states.columns
      
-      
-    
-    
+   * Construction of dataframe
 
-
-
+       *  From list of dictionary: 
+          
+          data = [{'a': i, 'b': 2 * i}  for i in range(3)]
+          
+       *  From array  (create one column dataframe)
+       
+           pd.DataFrame(population, columns=['population'])
+       
+       *  From a dictgionary of series object
+           
+           pd.DataFrame({'population': population,'area': area})                # here population and area are dictionary, so it is like diactionary within dictionary
+        
+       *   From two-dimensional  numpy array 
+           
+           pd.DataFrame(np.random.rand(3, 2),
+                                     columns=['foo', 'bar'],
+                                     index=['a', 'b', 'c'])
+                                     
+         
+           
+       
+           
      
   
   
