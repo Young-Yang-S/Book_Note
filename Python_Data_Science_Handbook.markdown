@@ -414,12 +414,57 @@ x2[:2, :2].copy()
                                      columns=['foo', 'bar'],
                                      index=['a', 'b', 'c'])
                                      
-         
-           
        
-           
-     
+  * Index Operation
   
+     ind[1]  get the second row index
+     
+     ind[::2] get the index with step 2 from the first row (so it will select 0,2,4,6... rows)
+           
+      attribute of index : ind.size, ind.shape, ind.ndim, ind.dtype
+      
+      **Warning** : Index is immutable : Like if you write like this : ind[1] = 0, it will show error
+      
+      for the index, we can use &, |, ^ (union, intersect, and difference) to operate them
+      
+      
+ * Data selection in series
+ 
+   Using index   data['b']  here index is b
+   
+   Using dicionary-like method: data.keys()  and data.items()
+   
+   Using slicing:  data[0:2]   # not recommended
+   
+   Using slicing with loc or iloc:  data.iloc[1:3]       data.loc[1:3]   # recommended
+   
+   Using masking: data[(data>0.3) &  (data<0.5) ]
+   
+   Using list-like:  data[['a','e']]
+   
+  
+*  Data modification or adding in series
+
+   data['e'] = 1.25   (index plus value, just like dictionary)
+   
+ 
+*  Data selection in dataframe 
+
+   data['area']  # access from column
+   
+   data.iloc[:3, :2]  # access from iloc, here is first 3 rows, first 2 columns
+   
+   data.loc[:'Illinois', :'pop']   # access from loc
+   
+   data.ix[:3, :'pop']   # just the hybrid of iloc and loc, not recommended because of confusion
+   
+   data.loc[data.density > 100, ['pop', 'density']]      # select density is larger than 100 and pop and density two columns' values
+   
+   data[1:3]   # get the second and third rows
+   
+   
+   
+   
   
    
    
